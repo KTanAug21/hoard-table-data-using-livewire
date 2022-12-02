@@ -20,6 +20,7 @@
             endif-->
         </div>
     </div>
+    <button wire:click="nextPageData">Increment</button>
    
     <div class="relative overflow-x-auto shadow-md rounded-lg">
         
@@ -46,8 +47,7 @@
         var startRow = 0;
         var filters  = {};
         refreshPage();
-
-       
+        
         window.addEventListener('data-updated', event => {
             console.log(event.detail);
             if( event.detail.reset ){

@@ -16,5 +16,10 @@ use App\Http\Controllers\ArticleController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('hoard-order.index');
 });
+
+Route::get('/talk-to-me', function () {
+    return view('talk-to-me.index');
+});
+

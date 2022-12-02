@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fea65c5ad3e2d161d790797026eda8e7",
+    "content-hash": "d621912d5e40959198a56962514a032b",
     "packages": [
         {
             "name": "brick/math",
@@ -2977,6 +2977,139 @@
                 }
             ],
             "time": "2022-11-05T23:03:38+00:00"
+        },
+        {
+            "name": "securitydiscovery/laravel-fly-machines",
+            "version": "v0.0.1-alpha",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SecurityDiscovery/laravel-fly-machines.git",
+                "reference": "24a2d6e5cd9c8c09bc998f405d1d59852dda0b51"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SecurityDiscovery/laravel-fly-machines/zipball/24a2d6e5cd9c8c09bc998f405d1d59852dda0b51",
+                "reference": "24a2d6e5cd9c8c09bc998f405d1d59852dda0b51",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.0",
+                "illuminate/http": "^9.41",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.13.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^6.0",
+                "nunomaduro/larastan": "^2.0.1",
+                "orchestra/testbench": "^7.0",
+                "pestphp/pest": "^1.21",
+                "pestphp/pest-plugin-laravel": "^1.1",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SecurityDiscovery\\LaravelFlyMachines\\LaravelFlyMachinesServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaravelFlyMachines": "SecurityDiscovery\\LaravelFlyMachines\\Facades\\LaravelFlyMachines"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SecurityDiscovery\\LaravelFlyMachines\\": "src",
+                    "SecurityDiscovery\\LaravelFlyMachines\\Database\\Factories\\": "database/factories"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastien Kaul",
+                    "email": "45340011+KaulSe@users.noreply.github.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Fly.io Machine PHP API client for Laravel. ",
+            "homepage": "https://github.com/securitydiscovery/laravel-fly-machines",
+            "keywords": [
+                "SecurityDiscovery",
+                "laravel",
+                "laravel-fly-machines"
+            ],
+            "support": {
+                "issues": "https://github.com/SecurityDiscovery/laravel-fly-machines/issues",
+                "source": "https://github.com/SecurityDiscovery/laravel-fly-machines/tree/v0.0.1-alpha"
+            },
+            "time": "2022-12-01T14:50:42+00:00"
+        },
+        {
+            "name": "spatie/laravel-package-tools",
+            "version": "1.13.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-package-tools.git",
+                "reference": "4af8e608184471b5568af6265ebb0ca0025c131a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/4af8e608184471b5568af6265ebb0ca0025c131a",
+                "reference": "4af8e608184471b5568af6265ebb0ca0025c131a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.28",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.7",
+                "pestphp/pest": "^1.22",
+                "phpunit/phpunit": "^9.5.24",
+                "spatie/pest-plugin-test-time": "^1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelPackageTools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools for creating Laravel packages",
+            "homepage": "https://github.com/spatie/laravel-package-tools",
+            "keywords": [
+                "laravel-package-tools",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-package-tools/issues",
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.13.7"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-11-15T09:10:09+00:00"
         },
         {
             "name": "symfony/console",
@@ -7957,7 +8090,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "securitydiscovery/laravel-fly-machines": 15
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
